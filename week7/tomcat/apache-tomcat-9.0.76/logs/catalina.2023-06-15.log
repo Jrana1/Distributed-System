@@ -1,0 +1,387 @@
+15-Jun-2023 17:56:22.691 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.76
+15-Jun-2023 17:56:22.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 5 2023 07:17:04 UTC
+15-Jun-2023 17:56:22.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.76.0
+15-Jun-2023 17:56:22.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Jun-2023 17:56:22.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.19.0-43-generic
+15-Jun-2023 17:56:22.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jun-2023 17:56:22.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/jrana/softwares/jdk-19.0.2
+15-Jun-2023 17:56:22.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+15-Jun-2023 17:56:22.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jun-2023 17:56:22.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:56:22.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:56:22.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Jun-2023 17:56:22.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Jun-2023 17:56:22.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Jun-2023 17:56:22.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Jun-2023 17:56:22.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Jun-2023 17:56:22.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/conf/logging.properties
+15-Jun-2023 17:56:22.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jun-2023 17:56:22.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Jun-2023 17:56:22.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Jun-2023 17:56:22.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Jun-2023 17:56:22.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Jun-2023 17:56:22.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:56:22.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:56:22.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/temp
+15-Jun-2023 17:56:22.705 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Jun-2023 17:56:23.026 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 17:56:23.037 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1041)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1317)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1330)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:652)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 11 more
+15-Jun-2023 17:56:23.038 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [505] milliseconds
+15-Jun-2023 17:56:23.079 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Jun-2023 17:56:23.079 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+15-Jun-2023 17:56:23.087 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager]
+15-Jun-2023 17:56:23.299 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager] has finished in [211] ms
+15-Jun-2023 17:56:23.299 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT]
+15-Jun-2023 17:56:23.315 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT] has finished in [16] ms
+15-Jun-2023 17:56:23.316 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager]
+15-Jun-2023 17:56:23.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager] has finished in [18] ms
+15-Jun-2023 17:56:23.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs]
+15-Jun-2023 17:56:23.349 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs] has finished in [15] ms
+15-Jun-2023 17:56:23.349 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples]
+15-Jun-2023 17:56:23.525 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples] has finished in [176] ms
+15-Jun-2023 17:56:23.527 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [487] milliseconds
+15-Jun-2023 17:56:23.530 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:629)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:393)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:275)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:583)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+15-Jun-2023 17:56:23.530 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 17:56:23.530 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Jun-2023 17:56:23.548 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 17:56:23.549 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 17:57:35.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.76
+15-Jun-2023 17:57:35.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 5 2023 07:17:04 UTC
+15-Jun-2023 17:57:35.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.76.0
+15-Jun-2023 17:57:35.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Jun-2023 17:57:35.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.19.0-43-generic
+15-Jun-2023 17:57:35.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jun-2023 17:57:35.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/jrana/softwares/jdk-19.0.2
+15-Jun-2023 17:57:35.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+15-Jun-2023 17:57:35.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jun-2023 17:57:35.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:57:35.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/conf/logging.properties
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Jun-2023 17:57:35.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Jun-2023 17:57:35.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:57:35.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 17:57:35.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/temp
+15-Jun-2023 17:57:35.977 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Jun-2023 17:57:36.248 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 17:57:36.266 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [434] milliseconds
+15-Jun-2023 17:57:36.310 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Jun-2023 17:57:36.310 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+15-Jun-2023 17:57:36.317 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager]
+15-Jun-2023 17:57:36.558 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager] has finished in [241] ms
+15-Jun-2023 17:57:36.559 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT]
+15-Jun-2023 17:57:36.579 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT] has finished in [20] ms
+15-Jun-2023 17:57:36.580 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager]
+15-Jun-2023 17:57:36.604 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager] has finished in [25] ms
+15-Jun-2023 17:57:36.604 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs]
+15-Jun-2023 17:57:36.620 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs] has finished in [16] ms
+15-Jun-2023 17:57:36.620 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples]
+15-Jun-2023 17:57:36.790 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples] has finished in [170] ms
+15-Jun-2023 17:57:36.794 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 17:57:36.804 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [536] milliseconds
+15-Jun-2023 18:00:26.879 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6]
+15-Jun-2023 18:00:26.897 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6] has finished in [18] ms
+15-Jun-2023 18:18:09.854 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+15-Jun-2023 18:18:09.855 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 18:18:09.857 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Jun-2023 18:18:09.875 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 18:18:09.880 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 18:18:37.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.76
+15-Jun-2023 18:18:37.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 5 2023 07:17:04 UTC
+15-Jun-2023 18:18:37.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.76.0
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.19.0-43-generic
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/jrana/softwares/jdk-19.0.2
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 18:18:37.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 18:18:37.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Jun-2023 18:18:37.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Jun-2023 18:18:37.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Jun-2023 18:18:37.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Jun-2023 18:18:37.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/conf/logging.properties
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 18:18:37.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/temp
+15-Jun-2023 18:18:37.283 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Jun-2023 18:18:37.566 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 18:18:37.583 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [459] milliseconds
+15-Jun-2023 18:18:37.616 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Jun-2023 18:18:37.616 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+15-Jun-2023 18:18:37.624 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager]
+15-Jun-2023 18:18:37.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager] has finished in [205] ms
+15-Jun-2023 18:18:37.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6]
+15-Jun-2023 18:18:37.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6] has finished in [32] ms
+15-Jun-2023 18:18:37.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT]
+15-Jun-2023 18:18:37.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT] has finished in [14] ms
+15-Jun-2023 18:18:37.875 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager]
+15-Jun-2023 18:18:37.894 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager] has finished in [18] ms
+15-Jun-2023 18:18:37.894 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs]
+15-Jun-2023 18:18:37.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs] has finished in [15] ms
+15-Jun-2023 18:18:37.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples]
+15-Jun-2023 18:18:38.070 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples] has finished in [161] ms
+15-Jun-2023 18:18:38.072 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 18:18:38.078 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [494] milliseconds
+15-Jun-2023 20:18:52.705 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+15-Jun-2023 20:18:52.706 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 20:18:52.708 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Jun-2023 20:18:52.733 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 20:18:52.741 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 20:19:02.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.76
+15-Jun-2023 20:19:02.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 5 2023 07:17:04 UTC
+15-Jun-2023 20:19:02.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.76.0
+15-Jun-2023 20:19:02.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Jun-2023 20:19:02.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.19.0-43-generic
+15-Jun-2023 20:19:02.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jun-2023 20:19:02.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/jrana/softwares/jdk-19.0.2
+15-Jun-2023 20:19:02.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+15-Jun-2023 20:19:02.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jun-2023 20:19:02.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 20:19:02.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/conf/logging.properties
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Jun-2023 20:19:02.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Jun-2023 20:19:02.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Jun-2023 20:19:02.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Jun-2023 20:19:02.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 20:19:02.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 20:19:02.659 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/temp
+15-Jun-2023 20:19:02.660 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Jun-2023 20:19:02.933 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 20:19:02.952 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [437] milliseconds
+15-Jun-2023 20:19:02.980 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Jun-2023 20:19:02.980 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+15-Jun-2023 20:19:02.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager]
+15-Jun-2023 20:19:03.194 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager] has finished in [208] ms
+15-Jun-2023 20:19:03.195 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6]
+15-Jun-2023 20:19:03.235 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6] has finished in [41] ms
+15-Jun-2023 20:19:03.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT]
+15-Jun-2023 20:19:03.256 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT] has finished in [20] ms
+15-Jun-2023 20:19:03.256 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager]
+15-Jun-2023 20:19:03.283 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager] has finished in [27] ms
+15-Jun-2023 20:19:03.284 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs]
+15-Jun-2023 20:19:03.304 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs] has finished in [21] ms
+15-Jun-2023 20:19:03.305 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples]
+15-Jun-2023 20:19:03.494 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples] has finished in [189] ms
+15-Jun-2023 20:19:03.497 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 20:19:03.505 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [551] milliseconds
+15-Jun-2023 21:25:13.927 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+15-Jun-2023 21:25:13.929 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:25:13.931 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Jun-2023 21:25:13.955 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:25:13.965 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:25:23.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.76
+15-Jun-2023 21:25:23.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 5 2023 07:17:04 UTC
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.76.0
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.19.0-43-generic
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/jrana/softwares/jdk-19.0.2
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jun-2023 21:25:23.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:25:23.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:25:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Jun-2023 21:25:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Jun-2023 21:25:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Jun-2023 21:25:23.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/conf/logging.properties
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:25:23.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/temp
+15-Jun-2023 21:25:23.818 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Jun-2023 21:25:24.154 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:25:24.175 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [520] milliseconds
+15-Jun-2023 21:25:24.212 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Jun-2023 21:25:24.212 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+15-Jun-2023 21:25:24.219 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager]
+15-Jun-2023 21:25:24.462 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager] has finished in [243] ms
+15-Jun-2023 21:25:24.463 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6]
+15-Jun-2023 21:25:24.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6] has finished in [37] ms
+15-Jun-2023 21:25:24.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT]
+15-Jun-2023 21:25:24.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT] has finished in [15] ms
+15-Jun-2023 21:25:24.515 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager]
+15-Jun-2023 21:25:24.534 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager] has finished in [19] ms
+15-Jun-2023 21:25:24.535 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs]
+15-Jun-2023 21:25:24.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs] has finished in [16] ms
+15-Jun-2023 21:25:24.550 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples]
+15-Jun-2023 21:25:24.726 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples] has finished in [175] ms
+15-Jun-2023 21:25:24.728 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:25:24.737 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [560] milliseconds
+15-Jun-2023 21:43:15.203 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/a6] has started
+15-Jun-2023 21:43:15.237 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/a6] is completed
+15-Jun-2023 21:43:25.240 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/a6] has started
+15-Jun-2023 21:43:25.258 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/a6] is completed
+15-Jun-2023 21:43:45.119 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+15-Jun-2023 21:43:45.119 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:43:45.121 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Jun-2023 21:43:45.136 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:43:45.144 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:43:47.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.76
+15-Jun-2023 21:43:47.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 5 2023 07:17:04 UTC
+15-Jun-2023 21:43:47.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.76.0
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.19.0-43-generic
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/jrana/softwares/jdk-19.0.2
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:43:47.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:43:47.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/conf/logging.properties
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:43:47.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/temp
+15-Jun-2023 21:43:47.320 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Jun-2023 21:43:47.608 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:43:47.626 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [461] milliseconds
+15-Jun-2023 21:43:47.656 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Jun-2023 21:43:47.656 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+15-Jun-2023 21:43:47.669 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager]
+15-Jun-2023 21:43:47.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager] has finished in [204] ms
+15-Jun-2023 21:43:47.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6]
+15-Jun-2023 21:43:47.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6] has finished in [36] ms
+15-Jun-2023 21:43:47.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT]
+15-Jun-2023 21:43:47.924 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT] has finished in [14] ms
+15-Jun-2023 21:43:47.924 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager]
+15-Jun-2023 21:43:47.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager] has finished in [18] ms
+15-Jun-2023 21:43:47.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs]
+15-Jun-2023 21:43:47.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs] has finished in [14] ms
+15-Jun-2023 21:43:47.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples]
+15-Jun-2023 21:43:48.153 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples] has finished in [195] ms
+15-Jun-2023 21:43:48.156 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:43:48.165 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [537] milliseconds
+15-Jun-2023 21:58:08.549 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/a6] has started
+15-Jun-2023 21:58:08.574 INFO [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/a6] is completed
+15-Jun-2023 21:58:13.138 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+15-Jun-2023 21:58:13.139 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:58:13.142 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Jun-2023 21:58:13.156 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:58:13.165 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:58:14.853 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.76
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 5 2023 07:17:04 UTC
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.76.0
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.19.0-43-generic
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/jrana/softwares/jdk-19.0.2
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.2+7-44
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:58:14.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:58:14.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Jun-2023 21:58:14.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Jun-2023 21:58:14.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Jun-2023 21:58:14.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Jun-2023 21:58:14.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Jun-2023 21:58:14.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/conf/logging.properties
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76
+15-Jun-2023 21:58:14.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/temp
+15-Jun-2023 21:58:14.867 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Jun-2023 21:58:15.140 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:58:15.157 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [437] milliseconds
+15-Jun-2023 21:58:15.191 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Jun-2023 21:58:15.191 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.76]
+15-Jun-2023 21:58:15.198 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager]
+15-Jun-2023 21:58:15.410 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/host-manager] has finished in [212] ms
+15-Jun-2023 21:58:15.411 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6]
+15-Jun-2023 21:58:15.448 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/a6] has finished in [36] ms
+15-Jun-2023 21:58:15.448 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT]
+15-Jun-2023 21:58:15.466 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/ROOT] has finished in [18] ms
+15-Jun-2023 21:58:15.467 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager]
+15-Jun-2023 21:58:15.489 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/manager] has finished in [23] ms
+15-Jun-2023 21:58:15.489 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs]
+15-Jun-2023 21:58:15.503 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/docs] has finished in [14] ms
+15-Jun-2023 21:58:15.503 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples]
+15-Jun-2023 21:58:15.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/jrana/Downloads/tomcat/apache-tomcat-9.0.76/webapps/examples] has finished in [193] ms
+15-Jun-2023 21:58:15.699 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 21:58:15.707 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [548] milliseconds
+15-Jun-2023 22:02:04.444 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+15-Jun-2023 22:02:04.444 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 22:02:04.447 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Jun-2023 22:02:04.467 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Jun-2023 22:02:04.480 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
